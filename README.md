@@ -1,0 +1,2 @@
+# ComRedBot
+Discord Bot
