@@ -24,8 +24,7 @@ from random import randint, choice
 from string import ascii_lowercase
 
 
-
-api_key = "563492ad6f917000010000019ece9e82749440728a8674141ad5f7ad"
+api_key = ""
 
 header = {
     "Authorization": api_key
