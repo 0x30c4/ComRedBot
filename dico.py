@@ -76,6 +76,7 @@ async def on_message(message):
         author = message.message.author
         avat = author.avatar_url
         print(avat)
+        await message.channel.send(avat)
 
     if message.content.lower().startswith("$img") or message.content.lower().startswith(",img"):
         q = message.content.lower().replace("$send img", '').replace(",img", '').strip()
