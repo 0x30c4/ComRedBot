@@ -22,7 +22,7 @@ from requests import get
 from json import loads, load
 from random import randint, choice
 from string import ascii_lowercase
-
+from platform import system
 
 with open('api_keys.json') as key:
     key = load(key)
@@ -45,11 +45,15 @@ def getImg(q):
             img_urls.append(r['urls']['small'])
             if n == 4: break
         
+        path_sep = '/'
+        if system() == 'Windows':
+            path_sep = "\\"
+
         img_names = []
         for img_url in img_urls:
             r = get(img_url)
             get_ext = 'jpg'
-            img_name = r'img\tmp{}{}.{}'.format(randint(0, 4096), "".join([choice(ascii_lowercase) for _ in range(16)]), get_ext)
+            img_name = r'img{}tmp{}{}.{}'.format(path_sep, randint(0, 4096), "".join([choice(ascii_lowercase) for _ in range(16)]), get_ext)
             open(img_name, 'wb').write(r.content)
             img_names.append(img_name)
         
