@@ -21,7 +21,7 @@
 import discord
 import os
 import requests
-from json import load
+import json
 from getImg_v2 import getImg
 
 client = discord.Client()
@@ -79,6 +79,6 @@ async def on_message(message):
 
 
 with open('api_keys.json') as key:
-    key = load(key)
+    key = json.load(key)
 
 client.run(key['Discord_token'])
