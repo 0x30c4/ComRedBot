@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Copyright (c) 2021 0x30c4
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,8 +24,13 @@ import os
 import requests
 import json
 from getImg_v2 import getImg
+import logging as log
 
 client = discord.Client()
+
+
+log.basicConfig(filename='commie.log', encoding='utf-8', level=log.DEBUG)
+
 
 def get_quote():
     response = requests.get("https://zenquotes.io/api/random")
@@ -69,12 +75,14 @@ async def on_message(message):
     if message.content.lower().startswith("$img") or message.content.lower().startswith(",img"):
         q = message.content.lower().replace("$send img", '').replace(",img", '').strip()
         img_names = getImg(q)
-        if type(img_names) is str:
-            print('Query: {}\nError : Not found!!\n'.format(q))
+        print(q, img_names, getImg('dog'))
+        if type(img_names) is str or img_names == []:
+            log.error('Query: {}\nError : Not found!!\n'.format(q))
             await message.channel.send("Sorry Image not found!! :/")
         else:
             for i in img_names:
                 print('Query: {}\nSending: {}\n----------------------------------------------------------------'.format(q, i))
+                log.info('Query: {}\nSending: {}\n----------------------------------------------------------------'.format(q, i))
                 await message.channel.send(file=discord.File(i))
 
 
