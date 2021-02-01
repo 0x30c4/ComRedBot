@@ -29,7 +29,7 @@ import logging as log
 client = discord.Client()
 
 
-log.basicConfig(filename='commie.log', encoding='utf-8', level=log.DEBUG)
+log.basicConfig(filename='commie.log', level=log.DEBUG)
 
 
 def get_quote():
@@ -37,7 +37,6 @@ def get_quote():
     json_data = json.loads(response.text)
     quote = json_data[0]['q'] + " -" + json_data[0]['a']
     return(quote)
-
 def addNum(n):
     s = 0
     for i in n:
