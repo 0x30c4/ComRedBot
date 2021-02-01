@@ -40,7 +40,7 @@ def addNum(n):
                 i = int(i)
                 s += i
         except:
-            return "Bainchod number dite koisi text des ke ???"            
+            return "Bainchod number dite koisi text des ken ???"
     return s
 
 @client.event
