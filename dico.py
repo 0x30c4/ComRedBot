@@ -21,8 +21,8 @@
 import discord
 import os
 import requests
-import json
-from getImg import getImg
+from json import load
+from getImg_v2 import getImg
 
 client = discord.Client()
 
@@ -67,13 +67,18 @@ async def on_message(message):
         await message.channel.send(quote)
 
     if message.content.lower().startswith("$img") or message.content.lower().startswith(",img"):
-        q = message.content.lower().replace("$send img", '').strip()
-        img_name = getImg(q)
-        if img_name == '404':
-            print('sending ', img_name)
+        q = message.content.lower().replace("$send img", '').replace(",img", '').strip()
+        img_names = getImg(q)
+        if type(img_names) is str:
+            print('Query: {}\nError : Not found!!\n'.format(q))
             await message.channel.send("Sorry Image not found!! :/")
         else:
-            await message.channel.send(file=discord.File(img_name))
+            for i in img_names:
+                print('Query: {}\nSending: {}\n----------------------------------------------------------------'.format(q, i))
+                await message.channel.send(file=discord.File(i))
 
 
-client.run('ODA0Nzk5MDY3NTY0NTM5OTU0.YBRlig.rIkMldBnIYb_-L_hKaR_kvy8yTo')
+with open('api_keys.json') as key:
+    key = load(key)
+
+client.run(key['Discord_token'])
