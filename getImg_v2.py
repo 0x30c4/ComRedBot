@@ -23,12 +23,14 @@ from json import loads, load
 from random import randint, choice
 from string import ascii_lowercase
 from platform import system
+import os
 
 with open('api_keys.json') as key:
     key = load(key)
 
 header = {
-	"Authorization": key["Authorization_unsplash"]
+	# "Authorization": key["Authorization_unsplash"]
+	"Authorization": os.environ('Authorization_unsplash')
 }
 
 
@@ -64,4 +66,4 @@ def getImg(q):
     
     return err
 if __name__ == '__main__':
-    print(getImg("shit"))
+    print(getImg("dog"))

@@ -25,11 +25,12 @@ import requests
 import json
 from getImg_v2 import getImg
 import logging as log
+import os
 
 client = discord.Client()
 
 
-log.basicConfig(filename='commie.log', level=log.DEBUG)
+log.basicConfig(filename='commie.log', level=log.INFO)
 
 
 def get_quote():
@@ -54,6 +55,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    
+    print('Message from {0.author}: {0.content} {0.author.id}'.format(message))
+
+
     if message.author == client.user:
         return
 
@@ -94,4 +99,5 @@ async def on_message(message):
 with open('api_keys.json') as key:
     key = json.load(key)
 
-client.run(key['Discord_token'])
+client.run(os.environ("Discord_token"))
+# client.run(key['Discord_token'])
