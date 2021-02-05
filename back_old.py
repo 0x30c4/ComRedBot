@@ -48,9 +48,34 @@ class CommieDoggie(discord.Client):
     async def on_message(self, message):
 
         self.logUserData(message)
-        
-        
-        print('Message from {0.author}: {0.content} {0.author.id} {0.author.avatar_url}'.format(message))
+
+    
+        if message.content.lower().startswith(',sp'):
+            try:
+                message.content = message.content.split()[1]
+                m_id = message.content.replace('<', '').replace('>', '').replace('@', '').replace('!', '')
+                print(m_id)
+                user = message.channel.get_member(m_id)
+                print(user.avatar_url)
+                await message.channel.send(user.avatar_url)
+            except Exception as e:
+                await message.channel.send("Command Syntax error!")
+                log.error(str(e))
+
+        if message.content.lower().startswith("$img") or message.content.lower().startswith(",img"):
+            q = message.content.lower().replace("$send img", '').replace(",img", '').strip()
+            img_names = getImg(q)
+            print(q, img_names, getImg('dog'))
+            if type(img_names) is str or img_names == []:
+                log.error('Query: {}\nError : Not found!!\n'.format(q))
+                await message.channel.send("Sorry Image not found!! :/")
+            else:
+                for i in img_names:
+                    print('Query: {}\nSending: {}\n----------------------------------------------------------------'.format(q, i))
+                    log.info('Query: {}\nSending: {}\n----------------------------------------------------------------'.format(q, i))
+                    await message.channel.send(file=discord.File(i))
+
+        # print('Message from {0.author}: {0.content} {0.author.id} {0.author.avatar_url}'.format(message))
 
     def logUserData(self, message):
         try:

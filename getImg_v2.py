@@ -29,8 +29,8 @@ with open('api_keys.json') as key:
     key = load(key)
 
 header = {
-	# "Authorization": key["Authorization_unsplash"]
-	"Authorization": os.environ('Authorization_unsplash')
+	"Authorization": key["Authorization_unsplash"]
+	# "Authorization": os.environ('Authorization_unsplash')
 }
 
 

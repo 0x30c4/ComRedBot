@@ -101,3 +101,154 @@ INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-
 INFO:discord.client:logging in using static token
 INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
 INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-qfvk",{"micros":64292,"calls":["discord-sessions-prd-2-70",{"micros":62997,"calls":["start_session",{"micros":48034,"calls":["api-prd-main-ztnc",{"micros":41557,"calls":["get_user",{"micros":5058},"add_authorized_ip",{"micros":1698},"get_guilds",{"micros":4249},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":13146,"calls":[]}]}]}] (Session ID: 9d690e004d38db467115e883ffc61670).
+INFO:discord.client:logging in using static token
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Closing the event loop.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-r5zd",{"micros":56313,"calls":["discord-sessions-prd-2-13",{"micros":53713,"calls":["start_session",{"micros":25398,"calls":["api-prd-main-lm62",{"micros":23221,"calls":["get_user",{"micros":2035},"add_authorized_ip",{"micros":1296},"get_guilds",{"micros":4256},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":26929,"calls":[]}]}]}] (Session ID: 193edd1f32949ea03b7ce5a7e3c98452).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-th7w",{"micros":81723,"calls":["discord-sessions-prd-2-84",{"micros":80053,"calls":["start_session",{"micros":56893,"calls":["api-prd-main-5mq6",{"micros":53612,"calls":["get_user",{"micros":2180},"add_authorized_ip",{"micros":2567},"get_guilds",{"micros":8581},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":13879,"calls":[]}]}]}] (Session ID: 5407047a12eeed8393e5bbeb9e2c8eeb).
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-s65n",{"micros":100972,"calls":["discord-sessions-prd-2-88",{"micros":99707,"calls":["start_session",{"micros":83246,"calls":["api-prd-main-62vk",{"micros":73920,"calls":["get_user",{"micros":5945},"add_authorized_ip",{"micros":8131},"get_guilds",{"micros":18159},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":14988,"calls":[]}]}]}] (Session ID: 6e20e6a1c7b367538bf288fd99f8ddbd).
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-d8bm",{"micros":131469,"calls":["discord-sessions-prd-2-62",{"micros":125796,"calls":["start_session",{"micros":84662,"calls":["api-prd-main-775x",{"micros":82049,"calls":["get_user",{"micros":3775},"add_authorized_ip",{"micros":15704},"get_guilds",{"micros":15604},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":29503,"calls":[]}]}]}] (Session ID: 3e86e0181cbf2c734306e9b108304e80).
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-nwmd",{"micros":56865,"calls":["discord-sessions-prd-2-132",{"micros":54705,"calls":["start_session",{"micros":48612,"calls":["api-prd-main-j362",{"micros":42912,"calls":["get_user",{"micros":5085},"add_authorized_ip",{"micros":2882},"get_guilds",{"micros":5527},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5087,"calls":[]}]}]}] (Session ID: 85f7221cc214c88ed42f7c1007ce35fe).
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-xwf7",{"micros":98067,"calls":["discord-sessions-prd-2-45",{"micros":94755,"calls":["start_session",{"micros":68291,"calls":["api-prd-main-7rzd",{"micros":65243,"calls":["get_user",{"micros":10086},"add_authorized_ip",{"micros":3176},"get_guilds",{"micros":18777},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":10056,"calls":[]}]}]}] (Session ID: bd9b8cfd1b7dd49c7c9d539cfaf1f4f0).
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+ERROR:root:unsupported operand type(s) for +: 'int' and 'str'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-pck2",{"micros":116699,"calls":["discord-sessions-prd-2-89",{"micros":111552,"calls":["start_session",{"micros":73529,"calls":["api-prd-main-6pvt",{"micros":70604,"calls":["get_user",{"micros":2659},"add_authorized_ip",{"micros":1500},"get_guilds",{"micros":47294},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":15901,"calls":[]}]}]}] (Session ID: 39d3b1b99fef47d9b9a949b02db19f8b).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-7z8z",{"micros":63922,"calls":["discord-sessions-prd-2-40",{"micros":60047,"calls":["start_session",{"micros":35299,"calls":["api-prd-main-jl87",{"micros":31079,"calls":["get_user",{"micros":2720},"add_authorized_ip",{"micros":1490},"get_guilds",{"micros":8821},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":10864,"calls":[]}]}]}] (Session ID: 7859064d2f1937026c828ddcb596e299).
+ERROR:root:'Asset' object has no attribute 'split'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-b5tn",{"micros":91243,"calls":["discord-sessions-prd-2-12",{"micros":87464,"calls":["start_session",{"micros":38162,"calls":["api-prd-main-nc56",{"micros":35462,"calls":["get_user",{"micros":2718},"add_authorized_ip",{"micros":4083},"get_guilds",{"micros":5388},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":33309,"calls":[]}]}]}] (Session ID: c038a72cc2688e76e21f781c4d7f6903).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-nxhw",{"micros":88845,"calls":["discord-sessions-prd-2-19",{"micros":84715,"calls":["start_session",{"micros":63737,"calls":["api-prd-main-4tkk",{"micros":58438,"calls":["get_user",{"micros":7986},"add_authorized_ip",{"micros":7512},"get_guilds",{"micros":7956},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":13216,"calls":[]}]}]}] (Session ID: b9ddbab2462fdd484b7346232d89b2a5).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-zvwd",{"micros":155054,"calls":["discord-sessions-prd-2-37",{"micros":153371,"calls":["start_session",{"micros":78672,"calls":["api-prd-main-nddc",{"micros":75707,"calls":["get_user",{"micros":2664},"add_authorized_ip",{"micros":5256},"get_guilds",{"micros":14478},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":49855,"calls":[]}]}]}] (Session ID: 34bea6cd3e28c1d7ed89c9b5745698e4).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:root:Query: coco
+Sending: img\tmp3075bcpgjdpsuhigyoks.jpg
+----------------------------------------------------------------
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:root:Query: coco
+Sending: img\tmp152oieutsyqwqzhfcgu.jpg
+----------------------------------------------------------------
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:root:Query: coco
+Sending: img\tmp3524mrudwtjrjwvtvzia.jpg
+----------------------------------------------------------------
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:root:Query: coco
+Sending: img\tmp450itffihipnjgrktpe.jpg
+----------------------------------------------------------------
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:root:Query: coco
+Sending: img\tmp2556pgocgbgzzoewcwum.jpg
+----------------------------------------------------------------
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-8c2t",{"micros":71906,"calls":["discord-sessions-prd-2-21",{"micros":70894,"calls":["start_session",{"micros":54946,"calls":["api-prd-main-qsqq",{"micros":50858,"calls":["get_user",{"micros":10087},"add_authorized_ip",{"micros":1907},"get_guilds",{"micros":6551},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":11545,"calls":[]}]}]}] (Session ID: eca6dacc6c0f274918efa28f632acab7).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-vb6b",{"micros":61432,"calls":["discord-sessions-prd-2-31",{"micros":59159,"calls":["start_session",{"micros":32343,"calls":["api-prd-main-wfr6",{"micros":29392,"calls":["get_user",{"micros":3112},"add_authorized_ip",{"micros":1528},"get_guilds",{"micros":5499},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: d97b57b2bd0bbaa85eb4a7ba462b774a).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-9p65",{"micros":114984,"calls":["discord-sessions-prd-2-14",{"micros":111625,"calls":["start_session",{"micros":84787,"calls":["api-prd-main-5ggs",{"micros":82060,"calls":["get_user",{"micros":2171},"add_authorized_ip",{"micros":1535},"get_guilds",{"micros":4985},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":10817,"calls":[]}]}]}] (Session ID: c5006392835f645d0b9893afa5ec864a).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-mq5b",{"micros":77707,"calls":["discord-sessions-prd-2-140",{"micros":75981,"calls":["start_session",{"micros":65088,"calls":["api-prd-main-jvll",{"micros":54300,"calls":["get_user",{"micros":3926},"add_authorized_ip",{"micros":4196},"get_guilds",{"micros":9402},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":5953,"calls":[]}]}]}] (Session ID: f90212473ac834ec4eddb6261ea38c30).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-vb6b",{"micros":100419,"calls":["discord-sessions-prd-2-135",{"micros":99054,"calls":["start_session",{"micros":98158,"calls":["api-prd-main-p35m",{"micros":90966,"calls":["get_user",{"micros":8720},"add_authorized_ip",{"micros":4619},"get_guilds",{"micros":21826},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: f3da8d79949ecf1c73f422da4790125c).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-j5dn",{"micros":66593,"calls":["discord-sessions-prd-2-53",{"micros":64866,"calls":["start_session",{"micros":46455,"calls":["api-prd-main-ts7v",{"micros":43096,"calls":["get_user",{"micros":6144},"add_authorized_ip",{"micros":2824},"get_guilds",{"micros":8140},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":9758,"calls":[]}]}]}] (Session ID: 9ff57a487384f0520c8d681d177c68ab).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-5k6v",{"micros":85222,"calls":["discord-sessions-prd-2-75",{"micros":84229,"calls":["start_session",{"micros":59289,"calls":["api-prd-main-6pvt",{"micros":56354,"calls":["get_user",{"micros":4936},"add_authorized_ip",{"micros":1407},"get_guilds",{"micros":2970},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":10883,"calls":[]}]}]}] (Session ID: 517c966a8bd50293da011c0499fb56b1).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-qsms",{"micros":69663,"calls":["discord-sessions-prd-2-39",{"micros":64360,"calls":["start_session",{"micros":31303,"calls":["api-prd-main-wh0m",{"micros":27689,"calls":["get_user",{"micros":2278},"add_authorized_ip",{"micros":1539},"get_guilds",{"micros":4776},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":29727,"calls":[]}]}]}] (Session ID: 0c0bd773de2b0d3936607f27cfc5f988).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:'Message' object has no attribute 'server'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-vbhs",{"micros":81642,"calls":["discord-sessions-prd-2-134",{"micros":80592,"calls":["start_session",{"micros":46269,"calls":["api-prd-main-2hv0",{"micros":43639,"calls":["get_user",{"micros":2569},"add_authorized_ip",{"micros":6476},"get_guilds",{"micros":6991},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":13979,"calls":[]}]}]}] (Session ID: bfabee9654863f14fed1d89c87050037).
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:cannot switch from manual field specification to automatic field numbering
+ERROR:root:'TextChannel' object has no attribute 'get_member'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-bdsz",{"micros":56290,"calls":["discord-sessions-prd-2-144",{"micros":54426,"calls":["start_session",{"micros":48358,"calls":["api-prd-main-lfrn",{"micros":45221,"calls":["get_user",{"micros":3051},"add_authorized_ip",{"micros":4092},"get_guilds",{"micros":5671},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 6e9052e575aa81482147c6da8a0212c9).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-vbhs",{"micros":124003,"calls":["discord-sessions-prd-2-116",{"micros":121258,"calls":["start_session",{"micros":116038,"calls":["api-prd-main-q6wc",{"micros":113298,"calls":["get_user",{"micros":5347},"add_authorized_ip",{"micros":11574},"get_guilds",{"micros":19135},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1813,"calls":[]}]}]}] (Session ID: c40b31153d5f9e3b4abf5d783abe849f).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-th7w",{"micros":77924,"calls":["discord-sessions-prd-2-124",{"micros":75358,"calls":["start_session",{"micros":31812,"calls":["api-prd-main-tgvn",{"micros":29152,"calls":["get_user",{"micros":2460},"add_authorized_ip",{"micros":1568},"get_guilds",{"micros":5513},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":40452,"calls":[]}]}]}] (Session ID: e82debcb5c96588abd50912d5d98f624).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-p6t7",{"micros":46571,"calls":["discord-sessions-prd-2-56",{"micros":40996,"calls":["start_session",{"micros":33376,"calls":["api-prd-main-z10w",{"micros":31038,"calls":["get_user",{"micros":2614},"add_authorized_ip",{"micros":1855},"get_guilds",{"micros":5105},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: a9927ed285cef6cc7ea3e06865316566).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-dl7c",{"micros":95535,"calls":["discord-sessions-prd-2-3",{"micros":94380,"calls":["start_session",{"micros":49061,"calls":["api-prd-main-khbl",{"micros":44425,"calls":["get_user",{"micros":6586},"add_authorized_ip",{"micros":1779},"get_guilds",{"micros":4525},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":14442,"calls":[]}]}]}] (Session ID: 9361764a115250c6e9eae5561abb4043).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-f7zt",{"micros":102510,"calls":["discord-sessions-prd-2-92",{"micros":98688,"calls":["start_session",{"micros":28719,"calls":["api-prd-main-8l4h",{"micros":26158,"calls":["get_user",{"micros":1973},"add_authorized_ip",{"micros":1543},"get_guilds",{"micros":3612},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 39067999db624a0a3d569841c21a9776).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-sln0",{"micros":58702,"calls":["discord-sessions-prd-2-23",{"micros":57668,"calls":["start_session",{"micros":50333,"calls":["api-prd-main-37rp",{"micros":47596,"calls":["get_user",{"micros":6278},"add_authorized_ip",{"micros":1809},"get_guilds",{"micros":4746},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 3927db5921bf98a38d6666647b0874d0).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-pl9j",{"micros":43812,"calls":["discord-sessions-prd-2-81",{"micros":42767,"calls":["start_session",{"micros":32000,"calls":["api-prd-main-sc9j",{"micros":29595,"calls":["get_user",{"micros":5665},"add_authorized_ip",{"micros":1708},"get_guilds",{"micros":3894},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 8e5f44b02e75f3eafaa300257f294541).

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-for i in seq 11; do
-    git add *;git commit -m ".";git push;
+for i in $(seq 100); do
+    echo >> README.md;git add README.md;git commit -m ".";git push;
     done
