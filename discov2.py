@@ -35,13 +35,15 @@ class CommieDoggie(discord.Client):
         super(CommieDoggie, self).__init__()
         self.token = ''
         self.dataGatherFp = dataGatherFp
+        self.userDataLog = open('user_data.csv')
         log.basicConfig(filename = logfile, level=log.INFO)
+
     
     async def on_ready(self):
         print('We have logged in as {0.user}'.format(self))
     
     async def on_message(self, message):
-        
+
         user = message.author
         print(user.avatar_url)
         
@@ -50,7 +52,7 @@ class CommieDoggie(discord.Client):
     
 
     def logUserData(self, message):
-        print("{0.author}, ".format(message))
+        print('Message from {0.author}: {0.content} {0.author.id}'.format(message), file=self.userDataLog)
 
     def read_token(self):
         with open('api_keys.json') as key:
