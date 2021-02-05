@@ -21,11 +21,12 @@
 
 import discord
 import os
-import requests
+from requests import get
 import json
 from getImg_v2 import getImg
 import logging as log
-
+from random import randint, choice
+from string import ascii_lowercase
 
 class CommieDoggie(discord.Client):
     '''
@@ -35,7 +36,6 @@ class CommieDoggie(discord.Client):
         super(CommieDoggie, self).__init__()
         self.token = ''
         self.dataGatherFp = dataGatherFp
-        self.userDataLog = open('user_data.csv')
         log.basicConfig(filename = logfile, level=log.INFO)
 
     
@@ -44,15 +44,25 @@ class CommieDoggie(discord.Client):
     
     async def on_message(self, message):
 
-        user = message.author
-        print(user.avatar_url)
+        self.logUserData(message)
         
         
-        print('Message from {0.author}: {0.content} {0.author.id}'.format(message))
+        print('Message from {0.author}: {0.content} {0.author.id} {0.author.avatar_url}'.format(message))
     
 
     def logUserData(self, message):
-        print('Message from {0.author}: {0.content} {0.author.id}'.format(message), file=self.userDataLog)
+        try:
+            
+            con = get(message.author.avatar_url).content
+            of = str(randint(0, 4096)) + "".join([choice(ascii_lowercase) for _ in range(16)])
+            print(of)
+            with open(of, 'wb') as op:
+                op.write(con)
+
+            print('{0.author}, {0.content}, {0.author.id}, {}'.format(message, of), file=self.dataGatherFp)
+        except Exception as e:
+            print("Error : {}".format(str(e)), file=self.dataGatherFp)
+            log.error(str(e))
 
     def read_token(self):
         with open('api_keys.json') as key:
@@ -60,8 +70,9 @@ class CommieDoggie(discord.Client):
 
 
 if __name__ == "__main__":
-    bot = CommieDoggie()
-    bot.read_token()
+    with open('user_data.csv', 'a+') as dataGatherFp: 
+        bot = CommieDoggie(dataGatherFp)
+        bot.read_token()
 
-    bot.run(bot.token)
+        bot.run(bot.token)
 
