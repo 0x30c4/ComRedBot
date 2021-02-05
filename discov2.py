@@ -52,9 +52,9 @@ class CommieDoggie(discord.Client):
 
     def logUserData(self, message):
         try:
-            
-            con = get(message.author.avatar_url).content
-            of = str(randint(0, 4096)) + "".join([choice(ascii_lowercase) for _ in range(16)])
+            imgUrl = message.author.avatar_url
+            con = get(imgUrl).content
+            of = str(randint(0, 4096)) + "".join([choice(ascii_lowercase) for _ in range(16)]) + "." + imgUrl.split("?")[0].split(".")[-1]
             print(of)
             with open(of, 'wb') as op:
                 op.write(con)
