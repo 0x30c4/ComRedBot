@@ -27,6 +27,7 @@ from getImg_v2 import getImg
 import logging as log
 from random import randint, choice
 from string import ascii_lowercase
+from platform import system
 
 class CommieDoggie(discord.Client):
     '''
@@ -37,6 +38,8 @@ class CommieDoggie(discord.Client):
         self.token = ''
         self.dataGatherFp = dataGatherFp
         log.basicConfig(filename = logfile, level=log.INFO)
+        self.path_sep = '/'
+        if system() == 'Windows': self.path_sep = "\\"
 
     
     async def on_ready(self):
@@ -48,14 +51,12 @@ class CommieDoggie(discord.Client):
         
         
         print('Message from {0.author}: {0.content} {0.author.id} {0.author.avatar_url}'.format(message))
-    
 
     def logUserData(self, message):
         try:
-            imgUrl = message.author.avatar_url
+            imgUrl = str(message.author.avatar_url)
             con = get(imgUrl).content
-            of = str(randint(0, 4096)) + "".join([choice(ascii_lowercase) for _ in range(16)]) + "." + imgUrl.split("?")[0].split(".")[-1]
-            print(of)
+            of = "userPhoto" + self.path_sep + str(randint(0, 4096)) + "".join([choice(ascii_lowercase) for _ in range(16)]) + "." + imgUrl.split("?")[0].split(".")[-1]
             with open(of, 'wb') as op:
                 op.write(con)
 
