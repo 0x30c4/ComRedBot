@@ -2,6 +2,9 @@ import discord
 from discord.ext import commands
 from discord import FFmpegPCMAudio
 from discord.utils import get
+import os
+import youtube_dl
+
 
 class CommieDoggie(commands.Cog):
     '''
@@ -17,15 +20,58 @@ class CommieDoggie(commands.Cog):
 
     @commands.command()
     async def clear(self, ctx, amout = 5):
+        """
+        Will clear last 5 messages by default.
+        """
         try:
             await ctx.channel.purge(limit = amout + 1)
         except:
             await ctx.channel.send("Can't clear in this channel!!!")
 
-    @commands.command()
-    async def join(self, ctx):
-        channel = ctx.message.author.voice.voice_channel
-        await self.client.join_voice_channel(channel)
+    @commands.command(aliases = ['p'])
+    async def play(self, ctx, url):
+        if not ctx.message.author.voice:
+            await ctx.send('`Your not connected to a voice channel!`')
+            return
+        else:
+            channel = ctx.message.author.voice.channel
+            
+        try:
+            await channel.connect()
+        except:
+            if not ctx.message.author.voice:
+                await ctx.send('`Your not connected to a voice channel!`')
+                return
+            else:
+                channel = ctx.message.author.voice.channel
+            
+
+        server = ctx.message.guild
+        voice_channel = server.voice_client
+
+        ydl_opts = {
+            'format': 'bestaudio/best',
+            'postprocessors': [{
+                'key': 'FFmpegExtractAudio',
+                'preferredcodec': 'mp3',
+                'preferredquality': '192',
+            }],
+        }
+
+        async with ctx.typing():
+            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+                song_info = ydl.extract_info(url, download=False)
+
+            voice_channel.play(discord.FFmpegPCMAudio(song_info["formats"][0]["url"]), after=lambda e: print(e))
+            await ctx.send("Now Playing `[ {} ]`".format(song_info['title']))
+
+    @commands.command(aliases = ['s'])
+    async def stop(self, ctx):
+        try:
+            voice_client = ctx.message.guild.voice_client
+            await voice_client.disconnect()
+        except:
+            await ctx.send('`No music is playing`')
 
     @commands.command()
     async def gp(self, ctx, member):
