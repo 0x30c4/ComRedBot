@@ -1,10 +1,10 @@
 import discord
 from discord.ext import commands
 from discord import FFmpegPCMAudio
-from discord.utils import get
+# from discord.utils import get
 import os
 import youtube_dl
-
+from requests import get
 
 class CommieDoggie(commands.Cog):
     '''
@@ -29,7 +29,10 @@ class CommieDoggie(commands.Cog):
             await ctx.channel.send("Can't clear in this channel!!!")
 
     @commands.command(aliases = ['p'])
-    async def play(self, ctx, url):
+    async def play(self, ctx, *, url):
+        """
+        To Play a song just type `.p Mariya Takeuchi Plastic Love`
+        """
         if not ctx.message.author.voice:
             await ctx.send('`Your not connected to a voice channel!`')
             return
@@ -59,14 +62,34 @@ class CommieDoggie(commands.Cog):
         }
 
         async with ctx.typing():
-            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-                song_info = ydl.extract_info(url, download=False)
+            try:
+                # with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+                #     song_info = ydl.extract_info(url, download=False)
+                if not url.startswith("https://youtube.com"):
+                    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+                        try:
+                            get(ydl_opts) 
+                        except:
+                            song_info = ydl.extract_info(f"ytsearch:{url}", download=False)['entries'][0]
+                            await ctx.send('`Searching the song`')
+                        else:
+                            song_info = ydl.extract_info(url, download=False)
+                else:
+                    song_info = ydl.extract_info(url, download=False)
+                
+                print(url)
+            except Exception as e:
+                await ctx.send("`Doggie has encountered a internal problem!!`")
+                return str(e)
 
             voice_channel.play(discord.FFmpegPCMAudio(song_info["formats"][0]["url"]), after=lambda e: print(e))
             await ctx.send("Now Playing `[ {} ]`".format(song_info['title']))
 
     @commands.command(aliases = ['s'])
     async def stop(self, ctx):
+        """
+        Stops currently playing song 
+        """
         try:
             voice_client = ctx.message.guild.voice_client
             await voice_client.disconnect()
