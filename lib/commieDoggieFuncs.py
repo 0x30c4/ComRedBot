@@ -1,5 +1,7 @@
 import discord
 from discord.ext import commands
+from discord import FFmpegPCMAudio
+from discord.utils import get
 
 class CommieDoggie(commands.Cog):
     '''
@@ -7,7 +9,7 @@ class CommieDoggie(commands.Cog):
     '''
     def __init__(self, client):
         self.client = client
-
+    
     @commands.Cog.listener()
     async def on_ready(self):
         print('Doggie is ready!')
@@ -19,6 +21,11 @@ class CommieDoggie(commands.Cog):
             await ctx.channel.purge(limit = amout + 1)
         except:
             await ctx.channel.send("Can't clear in this channel!!!")
+
+    @commands.command()
+    async def join(self, ctx):
+        channel = ctx.message.author.voice.voice_channel
+        await self.client.join_voice_channel(channel)
 
     @commands.command()
     async def gp(self, ctx, member):
