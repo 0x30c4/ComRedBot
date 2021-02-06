@@ -7,12 +7,12 @@ class CommieDoggie(commands.Cog):
     '''
     def __init__(self, client):
         self.client = client
-    
+
     @commands.Cog.listener()
     async def on_ready(self):
         print('Doggie is ready!')
         await self.client.change_presence(status = discord.Status.idle, activity=discord.Game("[ Barking in red ]"))
-    
+
     @commands.command()
     async def clear(self, ctx, amout = 5):
         try:
