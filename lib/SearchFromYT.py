@@ -14,7 +14,10 @@ header = {
 }
 
 
-YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist':'True'}
+YDL_OPTIONS = {
+    'format': 'bestaudio', 'noplaylist':'True',
+    "cookies": "cookies.txt"
+    }
 
 def search(arg):
     try:
